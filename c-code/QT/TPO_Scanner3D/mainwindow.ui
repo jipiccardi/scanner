@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1015</width>
+    <height>429</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>10</y>
+      <width>431</width>
+      <height>391</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::ClickFocus</enum>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <property name="usesScrollButtons">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Tab 1</string>
+     </attribute>
+     <widget class="QPushButton" name="pushButton_Bck">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>230</y>
+        <width>83</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Retroceso</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_Fwd">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>230</y>
+        <width>83</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Avance</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>401</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Modo</string>
+      </property>
+      <widget class="QRadioButton" name="radioButton_Scan">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>40</y>
+         <width>112</width>
+         <height>26</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Scan</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="radioButton_Cal">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>40</y>
+         <width>112</width>
+         <height>26</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Calibracion</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="radioButton_Man">
+       <property name="geometry">
+        <rect>
+         <x>270</x>
+         <y>40</y>
+         <width>112</width>
+         <height>26</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Manual</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>280</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Avance Manual</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_Dist">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>300</y>
+        <width>113</width>
+        <height>28</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>310</y>
+        <width>63</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>mm.</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonConectar">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>130</y>
+        <width>83</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Conectar</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxPort">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>90</y>
+        <width>411</width>
+        <height>28</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_Srt">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>220</y>
+        <width>83</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Start</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_Stp">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>260</y>
+        <width>83</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Stop</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Tab 2</string>
+     </attribute>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Ruta:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_Ruta">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>50</y>
+        <width>271</width>
+        <height>28</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_OpRuta">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>50</y>
+        <width>83</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Abrir</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_Rot">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>130</y>
+        <width>113</width>
+        <height>28</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>130</y>
+        <width>101</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Rot x Scan</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>100</y>
+        <width>101</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Configuracion</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>170</y>
+        <width>101</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Altura</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_H">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>170</y>
+        <width>113</width>
+        <height>28</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_Sv">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>220</y>
+        <width>83</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Guardar</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_Upld">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>220</y>
+        <width>83</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Cargar</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>170</y>
+        <width>63</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>mm.</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>130</y>
+        <width>63</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>degree</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
